@@ -1,9 +1,5 @@
-/* eslint-disable no-nested-ternary */
-/* eslint-disable no-continue */
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable max-len */
-/* eslint-disable linebreak-style */
-/* eslint-disable max-classes-per-file */
+/* eslint-disable */
+
 // these aren't really private, but nor are they really useful to document
 
 /**
