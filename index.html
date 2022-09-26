@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <title>Awesome Books</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="Styles/index.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="dl-flex">
+
+      <header class="dl-flex">
+      <nav class="dl-flex">
+        <span class="logo"><a href="#" class="logolink">Awesome Books</a></span>
+        <ul class="nav-navigation dl-flex">
+          <li><a href="#" class="navlinks" id="list-link">List</a></li>
+          <li><a href="#" class="navlinks" id="addNew-link">Add new</a></li>
+          <li><a href="#" class="navlinks" id="contact-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="date-time"></div>
+      </header>
+
+      <!-- Here start List section -->
+
+      <div class="list-container dl-flex ocult" id="bookList">
+
+          <h1 class="page-title">All Awesome Books</h1>
+  
+          <section id="Books-List">
+            
+            
+          </section>
+          
+      </div>
+
+      <!-- Here start Add book section -->
+
+      <main class="add-books dl-flex" id="addBook">
+          
+          <h1 class="page-title">Add a new book</h1>
+
+          <div id="add-input-container">
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="author" placeholder="Author">
+          </div>
+
+          <div id="add-btn-container">
+            <button id="add-btn" type="button">Add</button>
+          </div>
+          <span id='error' class="error dl-flex ocult" aria-live="polite">Please fill all the fields</span>
+      </main>
+      
+      <!-- contact section -->
+
+      <section class="contact-info ocult" id="contactinfo">
+
+        <h1 class="page-title">Contact information</h1>
+
+        <p>Do you have any questions or you just want to say "Hello"? <br>
+        You can reach out to us!</p>
+
+        <ul class="contact-list">
+          <li>Our e-mail: <a>mail@mail.com</a> </li>
+          <li>Our Phone number: 0123456789</li>
+          <li>Our address: we live over the internet :)</li>
+        </ul>
+      </section>
+
+      <!-- FOOTER -->  
+
+      <footer class="bar dl-flex">
+        <p>@Copyright</p>
+      </footer>
+      
+      <script src="index.js" type="module"></script>
+</body>
+</html>
