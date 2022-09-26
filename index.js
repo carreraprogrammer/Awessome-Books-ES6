@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 // Import th Books Class
 
 import BookData from './modules/Books.js';
@@ -6,15 +7,15 @@ import BookData from './modules/Books.js';
 
 import LocalStorage from './modules/LocalStorage.js';
 
-// Import methods 
+// Import methods
 
 import Methods from './modules/Methods.js';
 
-// Import single Page events 
+// Import single Page events
 
-import {listLinkOcult, addBookOcult, contactOcult} from './modules/Single_page.js'
+import { listLinkOcult, addBookOcult, contactOcult } from './modules/Single_page.js';
 
-// Import clock function 
+// Import clock function
 
 import './modules/Clock.js';
 
@@ -74,4 +75,3 @@ booksList.addEventListener('click', (e) => {
 listLinkOcult();
 addBookOcult();
 contactOcult();
-
