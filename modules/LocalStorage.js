@@ -12,13 +12,13 @@ export default class LocalStorage {
     return books;
   }
 
-  static addBook = book => {
+  static addBook = (book) => {
     const books = LocalStorage.getBooks();
     books.push(book);
     localStorage.setItem('books', JSON.stringify(books));
   }
 
-  static removeBooks = name => {
+  static removeBooks = (name) => {
     const books = LocalStorage.getBooks();
 
     books.forEach((book, index) => {

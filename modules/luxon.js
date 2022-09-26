@@ -1,3 +1,7 @@
+/* eslint-disable no-nested-ternary */
+/* eslint-disable no-continue */
+/* eslint-disable no-restricted-syntax */
+/* eslint-disable max-len */
 /* eslint-disable linebreak-style */
 /* eslint-disable max-classes-per-file */
 // these aren't really private, but nor are they really useful to document
@@ -639,6 +643,7 @@ function formatRelativeTime(unit, count, numeric = 'always', narrow = false) {
 
   if (numeric === 'auto' && lastable) {
     const isDay = unit === 'days';
+    // eslint-disable-next-line default-case
     switch (count) {
       case 1:
         return isDay ? 'tomorrow' : `next ${units[unit][0]}`;
