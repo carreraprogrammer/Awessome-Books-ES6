@@ -5,7 +5,7 @@
 
 ## Live Demo
 
-[Click here to view](https://carreraprogrammer.github.io/Awessome-books/)
+[Click here to view](https://carreraprogrammer.github.io/Awessome-Books-ES6/)
 
 ## Getting Started
 
