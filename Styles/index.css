@@ -1,0 +1,293 @@
+
+/* reset */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* reset */
+
+:root {
+  --wine1: #9f2a3e53;
+  --wine2: #9F2A3D;
+  --white: #f4f5f067;
+}
+
+.horizontal-bar {
+  border: 1px solid black;
+  margin-top: 24px;
+  width: 10%;
+}
+
+.dl-flex {
+  display: flex;
+}
+
+* li {
+  list-style: none;
+}
+
+.ocult {
+  display: none;
+}
+
+/* Here starts the nav bar customizations */
+
+header {
+  width: 100%;
+  justify-content: center;
+}
+
+nav {
+  width: 95%;
+  height: 50px;
+  border: 2px solid black;
+  align-items: center;
+  position: absolute;
+  top: 24px;
+}
+
+.logo {
+  flex-basis: 50%;
+  margin-left: 2%;
+}
+
+.logolink {
+  height: 50px;
+  font-weight: 600;
+  margin-top: 3px;
+}
+
+.nav-navigation {
+  flex-basis: 50%;
+  height: 100%;
+  justify-content: flex-end;
+  padding-right: 2%;
+  align-items: center;
+}
+
+.navlinks {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* Here starts main section customizations */
+
+body {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+.list-container {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-title {
+  font-size: 3rem;
+  margin-bottom: 3%;
+}
+
+#add-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+#add-btn-container {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 1rem;
+}
+
+#add-btn {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  background-color: white;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 3.5px solid black;
+  border-bottom: 3.5px solid black;
+}
+
+#add-btn:hover {
+  background-color: var(--wine2);
+  transform: scale(1.2);
+  color: white;
+}
+
+#title,
+#author {
+  width: 80%;
+  margin-top: 1rem;
+  border: 2px solid black;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 1.5rem;
+}
+
+#title::placeholder {
+  margin-left: 5px;
+}
+
+.add-books {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding: 5px;
+}
+
+#Books-List {
+  border: 2px solid black;
+  width: 50%;
+}
+
+.book-field-information {
+  height: 2.5rem;
+  border: 1px solid black;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.book-field-information:nth-child(even) {
+  background-color: var(--wine1);
+}
+
+.book-information {
+  display: flex;
+  width: 90%;
+  font-size: 1.2rem;
+  gap: 8px;
+  margin-left: 12px;
+}
+
+.remove-btn-container {
+  height: 80%;
+  display: flex;
+  justify-content: flex-end;
+  width: 10%;
+  margin-right: 12px;
+}
+
+.remove {
+  background: white;
+  color: inherit;
+  border: 2px solid black;
+  border-bottom: 3.5px solid black;
+  border-right: 3.5px solid black;
+  padding: 0 5px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.remove:hover {
+  background-color: var(--wine2);
+  transform: scale(1.1);
+  color: white;
+}
+
+.title-added {
+  width: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--wine2);
+}
+
+li:hover {
+  transform: scale(1.1);
+}
+
+li:active {
+  color: var(--wine2);
+}
+
+a:active {
+  color: var(--wine2);
+  font-weight: 600;
+}
+
+/* Here start contact customizations */
+
+.contact-list {
+  margin-top: 1rem;
+}
+
+.contact-list li {
+  list-style: disc outside none;
+  margin-left: 10%;
+}
+
+/* Here start footer customizations */
+
+footer {
+  width: 95%;
+  border: 2px solid black;
+  position: absolute;
+  bottom: 24px;
+  height: 2.5rem;
+  align-items: center;
+}
+
+footer p {
+  margin-left: 24px;
+}
+
+.purple {
+  color: var(--wine2);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#error {
+  border: 1px solid var(--wine2);
+  border-bottom: 3px solid var(--wine2);
+  border-right: 3px solid var(--wine2);
+  width: 80%;
+  margin-top: 12px;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: var(--wine2);
+  font-weight: bold;
+}
+
+/* date */
+
+#date-time {
+  height: 24px;
+  width: 300px;
+  color: var(--wine2);
+  position: absolute;
+  right: 3%;
+  top: 12%;
+  display: flex;
+  justify-content: right;
+  font-weight: bolder;
+}
